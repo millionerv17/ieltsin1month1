@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Writing Task 1 — шаблоны и структуры Band 7+</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+            background: #eef3f8;
+            color: #1c2e40;
+            line-height: 1.6;
+            padding: 30px 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page {
+            max-width: 1200px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 40px;
+            box-shadow: 0 30px 50px -25px #0a2b3f;
+            overflow: hidden;
+            padding: 30px 28px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255,255,255,0.7);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            background: linear-gradient(145deg, #0f344b, #1f6692);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.2rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .badge {
+            background: #1c5a81;
+            color: white;
+            padding: 8px 22px;
+            border-radius: 60px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            -webkit-text-fill-color: white;
+        }
+
+        .toc {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px 22px;
+            background: #e3eef9;
+            padding: 18px 30px;
+            border-radius: 60px;
+            margin: 30px 0 25px;
+            font-weight: 600;
+        }
+
+        .toc a {
+            text-decoration: none;
+            color: #0d3e5f;
+            border-bottom: 2px solid transparent;
+            transition: 0.2s;
+        }
+
+        .toc a:hover {
+            border-bottom-color: #146b9e;
+        }
+
+        .section {
+            margin-top: 50px;
+            scroll-margin-top: 30px;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            border-left: 12px solid #1d6fa5;
+            padding-left: 20px;
+            margin-bottom: 25px;
+            color: #103e5a;
+        }
+
+        .subsection-title {
+            font-size: 1.8rem;
+            font-weight: 650;
+            background: #e1effb;
+            padding: 10px 28px;
+            border-radius: 60px;
+            display: inline-block;
+            margin: 35px 0 20px;
+            color: #074069;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0 30px;
+        }
+
+        .card {
+            background: #f6faff;
+            border-radius: 28px;
+            padding: 22px;
+            box-shadow: 0 12px 22px -18px #103c57;
+            border: 1px solid #d0e2f2;
+        }
+
+        .card h4 {
+            font-size: 1.5rem;
+            color: #13486b;
+            margin-bottom: 16px;
+            border-bottom: 3px dashed #abcbe5;
+            padding-bottom: 6px;
+        }
+
+        .phrase-block {
+            margin: 12px 0;
+        }
+
+        .phrase {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #0b3f60;
+            font-family: 'Courier New', monospace;
+        }
+
+        .trans {
+            font-size: 0.95rem;
+            color: #4c6f8a;
+            font-style: italic;
+            margin: 4px 0 6px;
+        }
+
+        .example {
+            background: #d9ebf7;
+            padding: 10px 18px;
+            border-radius: 30px;
+            font-size: 0.98rem;
+            margin-top: 10px;
+            color: #173f58;
+        }
+
+        .example strong {
+            font-weight: 700;
+            background: #b7daf5;
+            padding: 2px 8px;
+            border-radius: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px -10px #9bb7d1;
+            margin: 25px 0;
+        }
+
+        th {
+            background: #0d3f5e;
+            color: white;
+            font-weight: 600;
+            padding: 15px 16px;
+            text-align: left;
+        }
+
+        td {
+            padding: 16px 16px;
+            border-bottom: 1px solid #bfd8ee;
+            vertical-align: top;
+        }
+
+        .warning-note {
+            background: #fff1d2;
+            border-left: 12px solid #f4b740;
+            border-radius: 30px;
+            padding: 22px 28px;
+            margin: 30px 0 20px;
+            font-size: 1.1rem;
+        }
+
+        .template-box {
+            background: #ebf5fa;
+            border-radius: 40px;
+            padding: 25px 30px;
+            margin: 25px 0;
+            border: 2px dotted #3f8ec0;
+        }
+
+        .footer-tg {
+            margin-top: 60px;
+            background: #0b2738;
+            color: white;
+            padding: 22px 30px;
+            border-radius: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .tg-channel {
+            background: #236b9c;
+            padding: 12px 38px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 6px 0 #0a1c2a;
+        }
+
+        .tg-channel:hover {
+            background: #2b88c4;
+        }
+
+        hr {
+            border: none;
+            border-top: 3px dashed #abcbe5;
+            margin: 40px 0 10px;
+        }
+
+        .reminder-tg {
+            background: #c9e1f5;
+            padding: 8px 25px;
+            border-radius: 40px;
+            display: inline-block;
+            margin: 20px 0 0;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="page" id="top">
+        <h1>✍️ IELTS Writing Task 1 <span class="badge">Academic Band 7+</span></h1>
+        <div style="font-size: 1.4rem; color: #1f4f73;">шаблоны, структуры, фразы</div>
+
+        <!-- навигация (TOC) -->
+        <div class="toc">
+            <a href="#structure">📋 структура</a>
+            <a href="#intro">✍️ introduction</a>
+            <a href="#overview">📊 overview</a>
+            <a href="#trends">📈 тренды</a>
+            <a href="#comparison">🔄 сравнение</a>
+            <a href="#shares">📐 доли / проценты</a>
+            <a href="#time">⏱ временные периоды</a>
+            <a href="#process">🏭 процессы</a>
+            <a href="#full-template">📝 полный шаблон</a>
+            <a href="#dont">❌ чего избегать</a>
+        </div>
+
+        <!-- раздел 1: структура Band 7+ -->
+        <div class="section" id="structure">
+            <div class="section-title">📋 Структура ответа для Band 7+</div>
+            <table>
+                <tr><th>Часть</th><th>Что писать</th><th>Примерный объем</th></tr>
+                <tr><td><strong>Introduction</strong></td><td>Перефразированное задание</td><td>1 предложение</td></tr>
+                <tr><td><strong>Overview</strong></td><td>Главные тренды, самые заметные особенности</td><td>2-3 предложения</td></tr>
+                <tr><td><strong>Body 1</strong></td><td>Детали первой группы данных</td><td>3-4 предложения</td></tr>
+                <tr><td><strong>Body 2</strong></td><td>Детали второй группы данных</td><td>3-4 предложения</td></tr>
+            </table>
+            <div class="warning-note">
+                💡 Важно: В Task 1 не нужен отдельный conclusion — только overview после введения. Без хорошего overview невозможно получить выше Band 5 за Task Achievement.
+            </div>
+        </div>
+
+        <!-- раздел 2: введение -->
+        <div class="section" id="intro">
+            <div class="section-title">✍️ Introduction (Введение) — шаблоны</div>
+            <div class="card-grid">
+                <div class="card"><h4>базовые замены</h4><span class="phrase">The graph shows → illustrates / depicts / presents</span><br><span class="phrase">The table gives information about → provides data on / compares</span><br><span class="phrase">The chart shows the number of → reveals the quantity of</span></div>
+                <div class="card"><h4>для графика</h4><span class="phrase">The line graph illustrates the changes in [что] over a period of [время].</span><br><span class="phrase">The bar chart compares [что] in terms of [категория] in [место].</span></div>
+                <div class="card"><h4>для таблицы</h4><span class="phrase">The table gives a breakdown of [что] by [категория].</span></div>
+                <div class="card"><h4>для процесса</h4><span class="phrase">The diagram illustrates how [something] is produced / works.</span></div>
+                <div class="card"><h4>для карты</h4><span class="phrase">The maps show the development of [place] between [year] and [year].</span></div>
+            </div>
+            <div class="template-box">
+                <strong>Полезные синонимы:</strong> shows → illustrates, depicts, demonstrates, compares; number → figure, data, proportion, rate; people → individuals, residents, population; between 2000-2020 → from 2000 to 2020, over a 20-year period.
+            </div>
+        </div>
+
+        <!-- раздел 3: overview (самый важный) -->
+        <div class="section" id="overview">
+            <div class="section-title">📊 Overview — самый важный абзац</div>
+            <div class="card-grid">
+                <div class="card"><h4>как начать</h4><span class="phrase">Overall, ...</span><br><span class="phrase">In general, ...</span><br><span class="phrase">It is clear that ...</span><br><span class="phrase">It can be seen that ...</span><br><span class="phrase">To summarise, ...</span></div>
+                <div class="card"><h4>что писать</h4>✔ главный тренд (рост/падение/стабильность)<br>✔ самые высокие/низкие значения<br>✔ основные различия между категориями<br>✔ количество этапов (для процесса)</div>
+                <div class="card"><h4>пример (тренды)</h4><span class="example"><strong>Overall, it can be clearly seen that</strong> the numbers of people employed have increased over the period, whereas the unemployed figures have remained stable.</span></div>
+                <div class="card"><h4>пример (сравнение)</h4><span class="example"><strong>In brief,</strong> Germany was the major producer of vehicles over this period followed by France and Norway.</span></div>
+                <div class="card"><h4>пример (процесс)</h4><span class="example"><strong>It can be seen that</strong> there are four main stages to car manufacturing. To be specific, these are moulding, machining, joining and shearing.</span></div>
+            </div>
+        </div>
+
+        <!-- раздел 4: описание трендов (рост/падение) -->
+        <div class="section" id="trends">
+            <div class="section-title">📈 Описание трендов (увеличение/уменьшение)</div>
+            <div class="card-grid">
+                <div class="card"><h4>📈 глаголы</h4><span class="phrase">Рост:</span> increase, rise, grow, climb, surge<br><span class="phrase">Падение:</span> decrease, fall, drop, decline, plummet, plunge<br><span class="phrase">Стабильность:</span> remain stable, level off, plateau</div>
+                <div class="card"><h4>📉 существительные</h4> an increase, a rise, a growth, a surge, a decrease, a fall, a drop, a dramatic fall, a plateau</div>
+                <div class="card"><h4>⚡ наречия + прилагательные</h4> significantly / significant, dramatically / dramatic, sharply / sharp, slightly / slight, moderately / moderate, gradually / gradual, considerably / considerable</div>
+                <div class="card"><h4>конструкции</h4><span class="phrase">Глагол+наречие:</span> <span class="example">The number grew significantly from 2,545 to 5,115.</span><span class="phrase">Прил+сущ:</span><span class="example">There was a significant growth in the number…</span></div>
+            </div>
+        </div>
+
+        <!-- раздел 5: сравнение данных -->
+        <div class="section" id="comparison">
+            <div class="section-title">🔄 Сравнение данных</div>
+            <div class="card-grid">
+                <div class="card"><span class="phrase">X was significantly higher than Y.</span></div>
+                <div class="card"><span class="phrase">X outnumbered Y by [число].</span></div>
+                <div class="card"><span class="phrase">X and Y were almost the same, at [число] and [число] respectively.</span></div>
+                <div class="card"><span class="phrase">There was a considerable difference between X and Y.</span></div>
+                <div class="card"><span class="phrase">X accounted for the largest proportion.</span></div>
+                <div class="card"><span class="phrase">X was closely followed by Y.</span></div>
+                <div class="card"><span class="phrase">In contrast, ... / Similarly, ... / Compared to X, Y is ... / While X increased, Y decreased.</span></div>
+            </div>
+        </div>
+
+        <!-- раздел 6: доли и проценты -->
+        <div class="section" id="shares">
+            <div class="section-title">📐 Описание долей и процентов (pie charts)</div>
+            <div class="card-grid">
+                <div class="card"><span class="phrase">X accounted for [%] of ...</span><div class="example">Coal accounted for 45% of energy production.</div></div>
+                <div class="card"><span class="phrase">X made up [%] of ...</span><div class="example">Renewables made up only 5% of the total.</div></div>
+                <div class="card"><span class="phrase">X represented [%] of ...</span></div>
+                <div class="card"><span class="phrase">The largest share was ...</span></div>
+                <div class="card"><h4>приблизительно</h4>approximately / roughly / about / close to / in the region of</div>
+                <div class="card"><h4>точно</h4>exactly 25%, precisely, just over 50%, just under</div>
+            </div>
+        </div>
+
+        <!-- раздел 7: временные периоды -->
+        <div class="section" id="time">
+            <div class="section-title">⏱ Описание временных периодов</div>
+            <div class="card-grid">
+                <div class="card"><span class="phrase">from 2010 to 2020 / between 2010 and 2020</span></div>
+                <div class="card"><span class="phrase">over a 10-year period / over a decade</span></div>
+                <div class="card"><span class="phrase">over a 10-year period commencing in 2010 / concluding in 2020</span></div>
+                <div class="card"><span class="phrase">every 3 years between 2011 and 2020</span></div>
+                <div class="card"><span class="phrase">in 2015 compared to 2025 / in 2015 in contrast to 10 years later</span></div>
+            </div>
+        </div>
+
+        <!-- раздел 8: процессы -->
+        <div class="section" id="process">
+            <div class="section-title">🏭 Описание процессов</div>
+            <div class="card-grid">
+                <div class="card"><h4>последовательность</h4><span class="phrase">First(ly), ... / To begin with, ...</span><br><span class="phrase">The first step is when...</span><br><span class="phrase">Next, ... / Then, ...</span><br><span class="phrase">After that, ...</span><br><span class="phrase">Subsequently, ...</span><br><span class="phrase">The next stage involves...</span><br><span class="phrase">At the same time, ...</span><br><span class="phrase">Finally, ... / In the final stage, ...</span></div>
+                <div class="card"><h4>пассивный залог</h4><span class="phrase">The raw materials are collected and transported.</span><br><span class="phrase">Once the product has been assembled, it is inspected.</span></div>
+            </div>
+        </div>
+
+        <!-- раздел 9: полный шаблон ответа + пример -->
+        <div class="section" id="full-template">
+            <div class="section-title">📝 Полный шаблон ответа для графика</div>
+            <div class="template-box">
+                <p><strong>Paragraph 1 — Introduction</strong><br>
+                <span class="phrase">The line graph illustrates the number of [что] in [где] between [год] and [год].</span></p>
+                <p><strong>Paragraph 2 — Overview</strong><br>
+                <span class="phrase">Overall, it is clear that [главный тренд 1]. Additionally, [главный тренд 2].</span></p>
+                <p><strong>Paragraph 3 — Body 1</strong><br>
+                <span class="phrase">Looking first at [категория A], [детали]. It started at [число] in [год] before rising/falling to [число] in [год]. [Another detail].</span></p>
+                <p><strong>Paragraph 4 — Body 2</strong><br>
+                <span class="phrase">Turning to [категория B], a different pattern can be seen. [детали]. In contrast, [категория C] remained relatively stable.</span></p>
+            </div>
+            <div class="card">
+                <h4>✅ готовый пример</h4>
+                <div class="example">
+                    <strong>The line graph illustrates</strong> the number of international tourists visiting three different regions in Europe between 2000 and 2020.<br>
+                    <strong>Overall, it is clear that</strong> tourist numbers increased in all three regions, with Region A consistently attracting the highest number. Notably, Region C overtook Region B in the final years.<br>
+                    <strong>Looking first at Region A,</strong> the number stood at approximately 50 million in 2000. This figure rose steadily, reaching a peak of 80 million in 2010. Following a slight drop to 75 million in 2015, it recovered to 85 million by 2020.<br>
+                    <strong>Turning to Region B,</strong> starting at 40 million in 2000, the figure experienced a dramatic increase to 70 million in 2005, before fluctuating considerably. In contrast, Region C showed modest growth from 20 million to 35 million, after which it climbed sharply to overtake Region B at 50 million in 2020.
+                </div>
+            </div>
+        </div>
+
+        <!-- раздел 10: чего НЕ делать -->
+        <div class="section" id="dont">
+            <div class="section-title">❌ Чего НЕ нужно делать</div>
+            <div class="warning-note">
+                <ul style="margin-left: 25px;">
+                    <li>❌ Не описывай каждую деталь — выбирай главные тренды.</li>
+                    <li>❌ Не давай причин — только описывай данные, не объясняй почему.</li>
+                    <li>❌ Не используй bullet points — только связный текст.</li>
+                    <li>❌ Не копируй задание — всегда перефразируй.</li>
+                    <li>❌ Не забудь overview — без него выше Band 5 не подняться.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ШПАРГАЛКА финальная -->
+        <div class="section-title" style="font-size: 1.8rem;">🎯 Полезные фразы — шпаргалка</div>
+        <div style="background:#e6f2fb; border-radius:40px; padding:25px;">
+            <table>
+                <tr><th>Ситуация</th><th>Фразы</th></tr>
+                <tr><td>Начать введение</td><td>The graph/table/chart illustrates/shows/compares...</td></tr>
+                <tr><td>Начать overview</td><td>Overall, / In general, / It is clear that...</td></tr>
+                <tr><td>Рост</td><td>increase, rise, grow, climb, surge</td></tr>
+                <tr><td>Падение</td><td>decrease, fall, drop, decline, plummet</td></tr>
+                <tr><td>Стабильность</td><td>remain stable, level off, plateau, stay constant</td></tr>
+                <tr><td>Сравнение</td><td>compared to, in contrast, similarly, while, whereas</td></tr>
+                <tr><td>Доля</td><td>accounted for, made up, represented, constituted</td></tr>
+                <tr><td>Приблизительно</td><td>approximately, roughly, about, in the region of</td></tr>
+                <tr><td>Время</td><td>from X to Y, between X and Y, over the period</td></tr>
+            </table>
+        </div>
+
+        <hr>
+
+        <!-- ФУТЕР С ТЕЛЕГРАМ КАНАЛОМ (каждая страница/секция его видит) -->
+        <div class="footer-tg">
+            <div style="font-size: 1.3rem;">📘 главное: практикуйся и пиши overview</div>
+            <a class="tg-channel" href="https://t.me/ielts_in1month" target="_blank">📱 ielts_in1month</a>
+        </div>
+        <div class="reminder-tg">
+            ⚡️ Больше шаблонов и примеров в Telegram → <strong>ielts_in1month</strong>
+        </div>
+    </div>
+</body>
+</html>
